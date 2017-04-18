@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - ruby 2.3.0p0
 
 * System dependencies
 
@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+migrations have NOT been run yet
+
+will be deployed to http://nat-dwk.herokuapp.com
