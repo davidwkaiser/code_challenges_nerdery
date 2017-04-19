@@ -1,4 +1,3 @@
 class SnacksController < ApplicationController
 
-
 end
