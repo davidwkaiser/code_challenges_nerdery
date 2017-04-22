@@ -21,7 +21,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* ...  
+
 migrations have been run
 
 will be deployed to http://nat-dwk.herokuapp.com
