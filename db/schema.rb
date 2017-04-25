@@ -16,9 +16,14 @@ ActiveRecord::Schema.define(version: 20170419025737) do
   enable_extension "plpgsql"
 
   create_table "snacks", force: :cascade do |t|
+    t.string   "name"
     t.integer  "api_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "votecount"
+    t.string   "lastpurchasedate"
+    t.boolean  "optional"
+    t.string   "purchaselocations"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   create_table "votes", force: :cascade do |t|
