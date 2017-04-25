@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20170419025737) do
     t.integer  "votecount"
     t.string   "lastpurchasedate"
     t.boolean  "optional"
+    t.integer  "purchasecount"
     t.string   "purchaselocations"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
