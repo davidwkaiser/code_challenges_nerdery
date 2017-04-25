@@ -6,6 +6,7 @@ class CreateSnacks < ActiveRecord::Migration[5.0]
       t.integer   :votecount
       t.string    :lastpurchasedate
       t.boolean   :optional
+      t.integer   :purchasecount
       t.string    :purchaselocations
 
       t.timestamps

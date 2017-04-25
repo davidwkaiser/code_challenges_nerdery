@@ -1,12 +1,4 @@
 class Snack < ApplicationRecord
-  # def name
-  #   @name
-  # end
-
-  # def name=(value)
-  #   @name=value
-  # end
-
   validates :name, presence: true
   #:location, presence: true #confirm if location validated here
   # validates :name, length: { maximum: 200,
