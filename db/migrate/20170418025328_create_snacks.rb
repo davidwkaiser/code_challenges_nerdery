@@ -3,7 +3,7 @@ class CreateSnacks < ActiveRecord::Migration[5.0]
     create_table :snacks do |t|
       t.string    :name
       t.integer   :api_id
-      t.integer   :votecount
+      # t.integer   :votecount
       t.string    :lastpurchasedate
       t.boolean   :optional
       t.integer   :purchasecount
