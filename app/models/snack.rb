@@ -5,8 +5,6 @@ class Snack < ApplicationRecord
   #       too_long: "%{count} characters is the maximum allowed" }
 
   # has_many :locations
-  has_many :votes
-
-
+  has_many :users, :through => :votes
 
 end
