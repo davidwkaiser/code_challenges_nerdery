@@ -1,5 +1,11 @@
 <h1>Welcome to SnaFoo!</h1>
-<p>Below is the list of snacks</p>
-<% @snacks.each do |snack| %>
+<p>Below is the list of permanent snacks</p>
+<% @permanent_snacks.each do |snack| %>
+<%= snack.name %>   locations: <%= snack.purchaselocations %> <br>
+<% end %>
+
+
+<p>Below is the list of suggested snacks</p>
+<% @suggested_snacks.each do |snack| %>
 <%= snack.name %>   locations: <%= snack.purchaselocations %> <br>
 <% end %>
