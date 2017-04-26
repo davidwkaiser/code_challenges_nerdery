@@ -14,7 +14,7 @@ class SnacksController < ApplicationController
                       optional:           item["optional"],
                       purchaselocations:  item["purchaseLocations"],
                       purchasecount:      item["purchaseCount"],
-                      lastpurchasedate:   item["lastPurchaseDate"])
+                      lastpurchasedate:   item["lastPurchaseDate"],)
       end
       # Snack.create(name: item["name"])
     end

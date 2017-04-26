@@ -1,11 +1,36 @@
 <h1>Welcome to SnaFoo!</h1>
-<p>Below is the list of permanent snacks</p>
-<% @permanent_snacks.each do |snack| %>
-<%= snack.name %>   locations: <%= snack.purchaselocations %> <br>
-<% end %>
+<h2>Permanent Snacks</h2>
+<p>We buy this whether you vote for it or not!</p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Purchase Locations</th>
+  </tr>
+  <% @permanent_snacks.each do |snack| %>
+    <tr>
+      <td><%= snack.name %></td>
+      <td><%= snack.purchaselocations %></td>
+    </tr>
+  <% end %>
+</table>
 
 
-<p>Below is the list of suggested snacks</p>
-<% @suggested_snacks.each do |snack| %>
-<%= snack.name %>   locations: <%= snack.purchaselocations %> <br>
-<% end %>
+<h2>Suggested Snacks</h2>
+<p>You only get these if you vote for them</p>
+<p>So vote early, vote often (no more than three times, though, OK?)</p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Purchase Locations</th>
+    <th>Votes</th>
+    <th></th>
+  </tr>
+  <% @suggested_snacks.each do |snack| %>
+    <tr>
+      <td><%= snack.name %></td>
+      <td><%= snack.purchaselocations %></td>
+      <td><%= snack.votes %></td>
+      <td><%= button_to "vote", '/votes/new', method: :post %></td>
+    </tr>
+  <% end %>
+</table>
