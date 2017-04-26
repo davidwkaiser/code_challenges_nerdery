@@ -18,6 +18,7 @@ class SnacksController < ApplicationController
       end
       # Snack.create(name: item["name"])
     end
-    @snacks = Snack.all
+    @permanent_snacks = Snack.where(optional: false)
+    @suggested_snacks = Snack.where(optional: true)
   end
 end
